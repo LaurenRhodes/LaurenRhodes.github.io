@@ -2374,6 +2374,8 @@ input, select, textarea {
 			display: block;
 		}
 
+
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
@@ -2408,11 +2410,15 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
+			
 		}
 
-			.image.main img {
-				width: 100%;
-			}
+		.image.main img {
+   			border-radius: 0; /* Removes oval or circular shape */
+    			width: 150px; /* Adjust as needed */
+   			height: 150px; /* Ensures square shape */
+    			object-fit: cover; /* Ensures the image fills the square without distortion */
+		}
 
 /* List */
 
