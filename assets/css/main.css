@@ -3789,3 +3789,23 @@ input, select, textarea {
 			}
 
 		}
+/* Force left alignment of list and bullets */
+.flush-left {
+    text-align: left;
+}
+
+.flush-left ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-position: outside;
+}
+
+.flush-left li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.cv-entry {
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
