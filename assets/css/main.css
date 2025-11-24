@@ -1986,6 +1986,28 @@ input, select, textarea {
 				color: #ffffff !important;
 			}
 
+.centered-image {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    height: auto;
+}
+
+/* Centered, unstyled button */
+.center-button {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.center-button a.button {
+    background: none !important;   /* remove color */
+    color: inherit !important;     /* match page text */
+    border: none !important;       /* remove border */
+    box-shadow: none !important;   /* remove shadow */
+}
+
+
+
 /* Form */
 
 	form {
@@ -3818,4 +3840,5 @@ input, select, textarea {
   line-height: 1.4;
 
 }
+
 
