@@ -3011,10 +3011,10 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
+		-moz-align-items: flex-start;
+		-webkit-align-items: flex-start;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
 		margin: 0 0 2em 0;
 	}
 
@@ -3122,7 +3122,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 2em 1em 1.5em 1.5em ;
 		}
 
 			#header.alt h1 {
@@ -3840,5 +3840,6 @@ input, select, textarea {
   line-height: 1.4;
 
 }
+
 
 
