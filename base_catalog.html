@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="nav-right">
+
+        <a href="{{ url_for('home') }}"
+            class="{% if request.path == '/' %}active{% endif %}">
+            Home
+        </a>
+
+        <a href="{{ url_for('light_curves') }}"
+            class="{% if request.path == '/light-curves' %}active{% endif %}">
+            Light Curves
+        </a>
+
+        <a href="{{ url_for('downloads') }}">
+            Download Data
+        </a>
+        
+        </div>
+
+        <div class="nav-left">
+            <img
+            src="{{ url_for('static', filename='image/mcgill_logo.png') }}"
+            alt="McGill Logo"
+            class="mcgill-logo"
+        >
+        </div>
+
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+
+</html>

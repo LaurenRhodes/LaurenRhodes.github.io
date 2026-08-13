@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Download Data</h2>
+
+<p>
+    This page allows you to download the gamma-ray burst (GRB) afterglow dataset
+    used throughout this website.<br>
+    You can customize the exported CSV file by applying filters based on detection
+    type, redshift availability, observation year, and whether the GRB is included
+    in the paper.<br>
+    Use the options below to select the subset of data you wish to download, then
+    click <b>Download CSV</b> to generate your file.
+</p>
+
+<form action="{{ url_for('download_data') }}" method="GET" class="filter-box">
+
+    <div>
+        <label>Detection type</label>
+        <select name="type">
+            <option value="all">All</option>
+            <option value="Detection">Detections only</option>
+            <option value="Non-Detection">Non-detections only</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Redshift</label>
+        <select name="redshift">
+            <option value="all">All</option>
+            <option value="known">Known only</option>
+            <option value="unknown">Unknown only</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Year</label>
+        <select name="year">
+            <option value="all">All</option>
+
+            {% for year in years %}
+            <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div>
+        <label>In paper</label>
+        <select name="paper">
+            <option value="all">All</option>
+            <option value="YES">Analyzed in Paper</option>
+            <option value="NO">Not Analyzed in Paper</option>
+        </select>
+    </div>
+
+    <button type="submit">Download CSV</button>
+
+</form>
+
+{% endblock %}

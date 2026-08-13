@@ -1,0 +1,136 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #fff3ef;
+    margin: 15px;
+    padding: 0;
+    color: #6f18c1;
+}
+
+h1 {
+    font-family: "Papyrus", fantasy;
+    color: #5a139d;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    font-weight: bold;}
+
+h2 {
+    font-family: "Papyrus", fantasy;
+    color: #5a139d;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 40px;
+    font-weight: bold;}
+
+
+.filter-box {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    background: #ce99ff;
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.filter-box div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-box label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.filter-box select,
+.filter-box button {
+    padding: 8px 12px;
+    font-size: 15px;
+}
+.navbar {
+    font-family: "Papyruse", fantasy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #6f18c1;
+
+    padding: 18px 30px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.mcgill-logo {
+    height: 42px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight:300;
+    transition: color 0.2s ease;
+    padding: 8px 16px;
+}
+
+.nav-right a:hover {
+    color: rgb(255, 254, 254);
+    background-color: #5a139d;
+}
+
+.nav-right a.active {
+    color: rgb(255, 254, 254);
+    background-color: #5a139d;
+    font-weight:600;
+    padding: 8px 16px;
+}
+
+
+p {
+    text-align: left;
+    font-size: 1.1em;
+    color: #212529;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+a {
+    color: #162431;
+    text-decoration: none;
+}
+
+
+.page-content {
+    padding: 30px 50px;
+}
+
+.page-content p {
+    color: #212529;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
